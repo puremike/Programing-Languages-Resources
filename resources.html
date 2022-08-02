@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -17,10 +17,24 @@
         font-family: "roboto", sans-serif;
         font-size: 1rem;
         text-align: left;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(12, 72, 124);
+        margin-top: 8rem;
+        font-size: 1.3rem;
       }
 
       table {
         margin: 3rem auto;
+        background-color: rgb(170, 240, 240);
+        transition: transform 0.5s ease-out 0.1s;
+      }
+
+      table:hover {
+        transform: scale(1.1);
       }
 
       th {
@@ -45,18 +59,30 @@
       table a:hover {
         color: rgb(12, 72, 124);
       }
+
+      footer {
+        text-align: center;
+        font-family: "Alegreya", serif;
+        font-size: 0.9rem;
+        margin-top: 18rem;
+      }
     </style>
   </head>
   <body>
+    <!-- Resources for popular languages, technologies, discipline, and topics -->
+    <h1>Popular Languages, Technologies, Discipline, and Topics</h1>
     <table>
+      <!-- table head section -->
       <thead>
         <tr>
           <th class="align-th">Languages</th>
           <th class="align-th">Technologies</th>
-          <th class="align-th">Discipline</th>
+          <th class="align-th">Disciplines</th>
           <th class="align-th">Topics</th>
         </tr>
       </thead>
+
+      <!-- table body section -->
       <tbody>
         <tr>
           <td>
@@ -189,5 +215,9 @@
         </tr>
       </tbody>
     </table>
+
+    <footer>
+      <p>&copy; 2022, Michael Egbinola</p>
+    </footer>
   </body>
 </html>
